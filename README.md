@@ -15,4 +15,6 @@ Başarılı doğrulama sonrası kullanıcıdan şirket seçmesi istenir ve seçi
 - **View Binding**
 - **Fragment**
 
-![Image](https://github.com/user-attachments/assets/f3e1dc60-f981-4f49-b39c-d28616b8e79a)
+![Image](https://github.com/user-attachments/assets/a6eef4d1-5961-4465-badc-11afad91fcab)
+
+![Image](https://github.com/user-attachments/assets/d268726f-e8a2-401d-a894-52eb9e757097)
