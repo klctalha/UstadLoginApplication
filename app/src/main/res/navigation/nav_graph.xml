@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/phoneInputFragment">
+
+    <fragment
+        android:id="@+id/companySelectionFragment"
+        android:name="com.talhakilic.ustadloginmobileapp.ui.fragment.CompanySelectionFragment"
+        android:label="fragment_company_selection"
+        tools:layout="@layout/fragment_company_selection" >
+        <action
+            android:id="@+id/action_companySelectionFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.talhakilic.ustadloginmobileapp.ui.fragment.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+    <argument
+        android:name="companyName"
+        app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/otpVerificationFragment"
+        android:name="com.talhakilic.ustadloginmobileapp.ui.fragment.OtpVerificationFragment"
+        android:label="OtpVerificationFragment" >
+        <action
+            android:id="@+id/action_otpVerificationFragment_to_companySelectionFragment"
+            app:destination="@id/companySelectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/phoneInputFragment"
+        android:name="com.talhakilic.ustadloginmobileapp.ui.fragment.PhoneInputFragment"
+        android:label="PhoneInputFragment" >
+        <action
+            android:id="@+id/action_phoneInputFragment_to_otpVerificationFragment"
+            app:destination="@id/otpVerificationFragment" />
+    </fragment>
+</navigation>

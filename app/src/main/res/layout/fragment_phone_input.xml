@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/phoneFragmentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:padding="24dp">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/headline1"
+        style="@style/TextHeadLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/headline_h2"
+        android:textSize="@dimen/headline_h2_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/stepTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/StepTextStyle"
+        android:text="@string/text_step_page1"
+        android:textColor="@color/text_step_page_color"
+        android:textSize="@dimen/text_step_number_size"
+        app:layout_constraintBottom_toBottomOf="@+id/headline1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/headline1" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phoneInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        style="@style/PhoneInputLayoutStyle"
+        app:layout_constraintBottom_toBottomOf="@+id/countryCodeInputLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/countryCodeInputLayout"
+        app:layout_constraintTop_toTopOf="@+id/countryCodeInputLayout"
+        app:layout_constraintVertical_bias="0.0"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/PhoneEditTextStyle"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_body_big"
+        style="@style/TextPhoneMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/text_body_big"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_body_big_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sendCodeButton"
+        style="@style/SendCodeButton"
+        android:layout_width="271dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="80dp"
+        android:text="@string/text_send_code_button"
+        android:textSize="@dimen/button_size"
+        app:layout_constraintBottom_toTopOf="@+id/stepsIndicatorLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_links"
+        style="@style/TextPhoneMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/text_links"
+        android:textColor="@color/text_links_color"
+        android:textSize="@dimen/text_links_size"
+        app:layout_constraintBottom_toTopOf="@+id/sendCodeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/countryCodeInputLayout"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        style="@style/CountryCodeInputLayoutStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_body_big">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/countryCodeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CountryCodeInputLayoutStyle"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/stepsIndicatorLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:id="@+id/step1"
+            android:layout_width="24dp"
+            android:layout_height="6dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_step_grey" />
+
+        <View
+            android:id="@+id/step2"
+            android:layout_width="24dp"
+            android:layout_height="6dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_step_grey" />
+
+        <View
+            android:id="@+id/step3"
+            android:layout_width="24dp"
+            android:layout_height="6dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_step_grey" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/bg_circle_icon"
+        android:src="@drawable/graphic_signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headline1" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/errorTextView"
+        style="@style/ErrorTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="2dp"
+        android:text="@string/text_error_message"
+        android:textColor="@color/text_error_message_color"
+        android:textSize="@dimen/text_error_message_size"
+        app:layout_constraintStart_toStartOf="@+id/phoneInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/phoneInputLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

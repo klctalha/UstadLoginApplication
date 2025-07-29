@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/otpVerificationLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="24dp">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/headline1"
+        style="@style/TextHeadLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/text_verification"
+        android:textSize="@dimen/headline_h2_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/stepTextView"
+        style="@style/StepTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_step_page2"
+        android:textColor="@color/text_step_page_color"
+        android:textSize="@dimen/text_step_number_size"
+        app:layout_constraintBottom_toBottomOf="@+id/headline1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/headline1" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/otpErrorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_error_message"
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="2dp"
+        android:text="@string/text_error_message"
+        android:textColor="@color/text_error_message_color"
+        android:textSize="@dimen/text_error_message_size"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/otpEditText"
+        app:layout_constraintStart_toStartOf="@+id/otpEditText"
+        app:layout_constraintTop_toBottomOf="@+id/otpEditText" />
+
+    <ImageView
+        android:id="@+id/otpImage"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/bg_circle_icon"
+        android:src="@drawable/graphic_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headline1" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/phoneInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/text_phone_info"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_body_big_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otpImage" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/countdownTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/timer"
+        android:textColor="@color/timer"
+        android:textSize="@dimen/text_timer"
+        app:layout_constraintEnd_toEndOf="@+id/phoneInfoTextView"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/phoneInfoTextView"
+        app:layout_constraintTop_toBottomOf="@+id/phoneInfoTextView" />
+
+    <com.chaos.view.PinView
+        android:id="@+id/otpEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:autofillHints=""
+        android:background="@null"
+        android:cursorVisible="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:importantForAccessibility="no"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:itemBackground="@drawable/bg_otp_box"
+        android:textSize="18sp"
+        app:cursorColor="@color/black"
+        app:itemCount="6"
+        app:itemHeight="48dp"
+        app:itemRadius="8dp"
+        app:itemSpacing="8dp"
+        app:itemWidth="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/resendCodeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneInfoTextView"
+        app:lineWidth="1dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/verifyButton"
+        style="@style/VerificationButton"
+        android:layout_width="271dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="12dp"
+        android:enabled="false"
+        android:text="@string/verification_button"
+        android:textSize="@dimen/button_size"
+        app:layout_constraintBottom_toTopOf="@+id/logoutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logoutButton"
+        style="@style/LogOutButton"
+        android:layout_width="271dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/logout_button"
+        android:textColor="@color/text_logout"
+        android:textSize="@dimen/button_size"
+        app:layout_constraintBottom_toTopOf="@+id/stepsIndicatorLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/resendCodeText"
+        style="@style/TextResendCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/text_resend_code"
+        android:textColor="@color/text_resend_code"
+        android:textSize="@dimen/text_body_big_size"
+        app:layout_constraintBottom_toTopOf="@+id/verifyButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/stepsIndicatorLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:id="@+id/step1"
+            android:layout_width="24dp"
+            android:layout_height="6dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_step_green" />
+
+        <View
+            android:id="@+id/step2"
+            android:layout_width="24dp"
+            android:layout_height="6dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_step_orange" />
+
+        <View
+            android:id="@+id/step3"
+            android:layout_width="24dp"
+            android:layout_height="6dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_step_grey" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

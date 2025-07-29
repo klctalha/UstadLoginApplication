@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">UstadLoginApp</string>
+    <string name="headline_h2">Welcome!</string>
+    <string name="text_body_big">Please enter your registered phone number.</string>
+    <string name="text_send_code_button">Get Verification Code</string>
+    <string name="text_step_page1">1/3</string>
+    <string name="text_step_page2">2/3</string>
+    <string name="text_step_page3">3/3</string>
+    <string name="text_links">I want to establish a company</string>
+    <string name="text_error_message">""</string>
+    <string name="text_verification">Verification</string>
+    <string name="logout_button">Log Out</string>
+    <string name="verification_button">Verify</string>
+    <string name="text_resend_code">Get a new password</string>
+    <string name="text_phone_info">Please enter the verification code sent to your mobile phone at +90 500 500 00 00.</string>
+    <string name="timer">01:30</string>
+    <string name="text_company">Company Selection</string>
+    <string name="text_company_selection_continue">Which of your registered companies would you like to move forward with?</string>
+    <string name="text_selection_company">Select a company</string>
+    <string name="continue_button">Continue</string>
+    <string name="text_home_page">Welcome</string>
+    <string name="text_company_description">""</string>
+    <string name="text_support">Support</string>
+    <string name="text_logout">Log Out</string>
+    <string name="text_log_code_sent">Code sent</string>
+    <string name="text_code_verification_error">Code verification failed, try again.</string>
+    <string name="text_error_invalid_otp">Please enter a valid 6-digit code.</string>
+    <string name="text_otp_instruction">Please enter the verification code sent to your mobile number %1$s %2$s.</string>
+    <string name="text_error_phone_length">The phone number must be 10 digits.</string>
+    <string name="text_error_invalid_phone">Please enter a valid phone number.</string>
+    <string name="text_error_id_missing">Verification ID not found!</string>
+    <string name="text_error_billing_not_enabled">No registered phone number found</string>
+    <string name="text_error_invalid_code">You entered an invalid verification code.</string>
+    <string name="text_error_many_requests">Too many attempts have been made, please try again later.</string>
+    <string name="text_error_unknown">An error occurred: %1$s</string>
+    <string name="text_app_name">UstadLoginApp</string>
+    <string name="text_login_message">We handle accounting, you focus on your business.</string>
+    <string name="text_login_turkish">continue with Turkish</string>
+    <string name="text_login_english">continue with English</string>
+
+
+    <string name="desc_ustad">Ustad is an innovative SaaS platform that digitizes businesses accounting and tax processes and brings together taxpayers and financial advisors under one roof. It streamlines accounting processes with document sharing, e-Invoice integration, bank connections, and automation features, and its user-friendly interface allows you to easily manage all processes from a single point. Ustad prioritizes data security and offers secure sessions accessible only to authorized users with SMS authentication. Offering tailored solutions for a wide range of sectors, from freelancers and startups to tech parks and consulting firms, Ustad provides uninterrupted support for regulatory compliance, reporting, and communication processes by matching the right financial advisors. Throughout your business"s accounting and tax processes, you'll work with financial advisors who possess industry-specific regulatory expertise. Ustad's experienced business partners will guide you every step of the way, providing guidance on legal compliance and risk management.</string>
+
+    <string name="desc_turkcell">Turkcell is a well-established, integrated communications and technology services company founded in Turkey. It offers voice, data, and TV services, as well as value-added individual and corporate services, over its mobile and fixed-network networks. Its shares began trading simultaneously on the Borsa Istanbul (BIST) and the New York Stock Exchange (NYSE) on July 11, 2000, making it the only Turkish company listed on the NYSE. Turkcell is also included in the Borsa Istanbul Sustainability Index. Turkcell is a regional player offering integrated communications and technology services. It aims to meet the expectations of individual and corporate customers by offering innovative products and services across mobile and fixed-network platforms.</string>
+
+    <string name="desc_aselsan">Founded in 1975 to meet the communications needs of the Turkish Armed Forces with national resources, ASELSAN is a joint-stock company affiliated with the Turkish Armed Forces Foundation (TSKGV). 74.20% of ASELSAN"s shares are owned by the TSKGV, while 25.80% are publicly traded on Borsa Istanbul (BIST). As Türkiye's largest defense electronics company, ASELSAN offers a wide range of products to meet the needs of domestic and international procurement authorities, particularly the Turkish Armed Forces, in communications and information technologies, radar and electronic warfare, electro-optics, avionics, unmanned systems, land, naval, and weapon systems, air defense and missile systems, command and control systems, transportation, security, traffic, automation, and healthcare technologies. Today, ASELSAN has become a brand that exports its original products, is among the world's top 100 defense industry companies (Defense News Top 100), and establishes partnerships in international markets, engages in local collaborations, and invests.</string>
+
+
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <ImageView
+        android:id="@+id/appIcon"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/bg_rectangle_icon"
+        android:src="@drawable/ustad_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/appDescription"
+        android:layout_width="350dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="@string/text_login_message"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_body_big_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appTitle" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/appTitle"
+        style="@style/TextWelcomeHeadLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/text_app_name"
+        android:textSize="@dimen/headline_h2_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appIcon" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonEnglish"
+        style="@style/ContinueWithEnglish"
+        android:layout_width="271dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="184dp"
+        android:text="@string/text_login_english"
+        android:textSize="@dimen/button_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appDescription" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonTurkish"
+        style="@style/ContinueWithTurkish"
+        android:layout_width="271dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_login_turkish"
+        android:textSize="@dimen/button_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEnglish" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="24dp"
+    tools:context=".ui.fragment.CompanySelectionFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/companySelectionTextView"
+        style="@style/TextHeadLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/text_company"
+        android:textSize="@dimen/headline_h2_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/stepTextView"
+        style="@style/StepTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_step_page3"
+        android:textColor="@color/text_step_page_color"
+        android:textSize="@dimen/text_step_number_size"
+        app:layout_constraintBottom_toBottomOf="@+id/companySelectionTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/companySelectionTextView" />
+
+    <ImageView
+        android:id="@+id/companyImage"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/bg_circle_icon"
+        android:src="@drawable/graphic_accounting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/companySelectionTextView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/phoneInfoTextView"
+        android:layout_width="350dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/text_company_selection_continue"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_body_big_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/companyImage" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/companyDropdownLayout"
+        style="@style/CompanyDropdownStyle"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        app:layout_constraintTop_toBottomOf="@+id/phoneInfoTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <AutoCompleteTextView
+            android:id="@+id/companyDropdown"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:hint="@string/text_selection_company"
+            android:textColor="@color/company_select"
+            android:textCursorDrawable="@null"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_links"
+        style="@style/TextPhoneMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/text_links"
+        android:textColor="@color/text_links_color"
+        android:textSize="@dimen/text_links_size"
+        app:layout_constraintBottom_toTopOf="@+id/continueButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/continueButton"
+        style="@style/ContinueButtonStyle"
+        android:layout_width="271dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="12dp"
+        android:enabled="false"
+        android:text="@string/continue_button"
+        android:textSize="@dimen/button_size"
+        app:layout_constraintBottom_toTopOf="@+id/logoutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logoutButton"
+        style="@style/LogOutButton"
+        android:layout_width="271dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/logout_button"
+        android:textColor="@color/text_logout"
+        android:textSize="@dimen/button_size"
+        app:layout_constraintBottom_toTopOf="@+id/stepsIndicatorLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/stepsIndicatorLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:id="@+id/step1"
+            android:layout_width="24dp"
+            android:layout_height="6dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_step_green" />
+
+        <View
+            android:id="@+id/step2"
+            android:layout_width="24dp"
+            android:layout_height="6dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_step_green" />
+
+        <View
+            android:id="@+id/step3"
+            android:layout_width="24dp"
+            android:layout_height="6dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_step_orange" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

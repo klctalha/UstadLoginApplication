@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">UstadLoginMobileApp</string>
+    <string name="headline_h2">Hoş Geldiniz!</string>
+    <string name="text_body_big">Lütfen kayıtlı telefon numaranızı girin.</string>
+    <string name="text_send_code_button">Doğrulama Kodu Al</string>
+    <string name="text_step_page1">1/3</string>
+    <string name="text_step_page2">2/3</string>
+    <string name="text_step_page3">3/3</string>
+    <string name="text_links">Şirket kurmak istiyorum</string>
+    <string name="text_error_message">" "</string>
+    <string name="text_verification">Doğrulama</string>
+    <string name="logout_button">Çıkış Yap</string>
+    <string name="verification_button">Doğrula</string>
+    <string name="text_resend_code">Yeni şifre al</string>
+    <string name="text_phone_info">Lütfen +90 500 500 00 00 numaralı cep telefonunuza gönderilen doğrulama şifresini girin.</string>
+    <string name="timer">01:30</string>
+    <string name="text_company">Şirket Seçimi</string>
+    <string name="text_company_selection_continue">Kayıtlı şirketlerinizden hangisi ile ilerlemek istersiniz?</string>
+    <string name="text_selection_company">Şirket seçin</string>
+    <string name="continue_button">Devam et</string>
+    <string name="text_home_page">Hoş Geldiniz</string>
+    <string name="text_company_description">""</string>
+    <string name="text_support">Destek</string>
+    <string name="text_logout">Çıkış Yap</string>
+    <string name="text_log_code_sent">Kod gönderildi</string>
+    <string name="text_code_verification_error">Kod doğrulanamadı, tekrar deneyin.</string>
+    <string name="text_error_invalid_otp">Lütfen geçerli 6 haneli kodu giriniz</string>
+    <string name="text_otp_instruction">Lütfen %1$s %2$s numaralı cep telefonunuza gönderilen doğrulama şifresini girin.</string>
+    <string name="text_error_phone_length">Telefon numarası 10 haneli olmalıdır.</string>
+    <string name="text_error_invalid_phone"> Geçerli bir telefon numarası girin.</string>
+    <string name="text_error_id_missing">Doğrulama kimliği bulunamadı!</string>
+    <string name="text_error_billing_not_enabled">Kayıtlı telefon numarası bulunamadı</string>
+    <string name="text_error_invalid_code">Geçersiz doğrulama kodu girdiniz</string>
+    <string name="text_error_many_requests">Çok fazla deneme yapıldı, lütfen daha sonra tekrar deneyin</string>
+    <string name="text_error_unknown">Bir hata oluştu: %1$s</string>
+    <string name="text_app_name">UstadLoginApp</string>
+    <string name="text_login_message">Muhasebe bizde, siz işinize odaklanın.</string>
+    <string name="text_login_turkish">Türkçe ile devam et</string>
+    <string name="text_login_english">İngilizce ile devam et</string>
+
+
+    <string name="desc_ustad">Üstad, işletmelerin muhasebe ve vergi süreçlerini dijitalleştiren, mükellefler ile mali müşavirleri tek bir çatı altında buluşturan yenilikçi bir SaaS platformudur. Evrak paylaşımı, eFatura entegrasyonu, banka bağlantıları ve otomasyon özellikleriyle muhasebe işlemlerini hızlandırır, kullanıcı dostu arayüzü sayesinde tüm süreçleri tek noktadan kolayca yönetmenizi sağlar. Veri güvenliğine azami özen gösteren Üstad, yalnızca tanımlı kullanıcıların erişebildiği, SMS doğrulamalı güvenli oturumlarla hizmet sunar. Serbest çalışanlardan start-up"lara, teknopark şirketlerinden danışmanlık firmalarına kadar birçok sektöre özel çözümler sunan Üstad, doğru mali müşavir eşleşmeleriyle mevzuat uyumu, raporlama ve iletişim süreçlerinde kesintisiz destek sağlar. İşletmenizin muhasebe ve vergi süreçlerinde sektörünüze özel mevzuat bilgisine sahip mali müşavirlerle çalışırsınız. Üstad’ın deneyimli iş ortakları, her aşamada size rehberlik eder, yasal uyum ve risk yönetimi konusunda yönlendirmeler sağlar.
+    </string>
+
+    <string name="desc_turkcell">Turkcell, Türkiye’de kurulmuş; yerleşik, entegre iletişim ve teknoloji hizmetleri şirketidir. Müşterilerine mobil ve sabit şebekeleri üzerinden ses, veri, TV hizmetleri ve katma değerli bireysel ve kurumsal servisler sunmaktadır. Hisseleri 11 Temmuz 2000"de Borsa İstanbul (BİST) ve New York Stock Exchange'de (NYSE) eşzamanlı olarak işlem görmeye başlayan Turkcell, NYSE'ye kote olan tek Türk şirketi unvanına sahiptir. Turkcell aynı zamanda Borsa İstanbul Sürdürülebilirlik Endeksi’nde yer almaktadır. Turkcell, bölgede entegre iletişim ve teknoloji hizmeti sunan bir oyuncudur. Mobil ve sabit şebeke platformları üzerinden yaratıcı ürün ve hizmetler sunarak bireysel ve kurumsal müşterilerin tüm beklentilerini karşılamayı hedeflemektedir.
+    </string>
+
+    <string name="desc_aselsan">Türk Silahlı Kuvvetleri"nin haberleşme ihtiyaçlarının millî imkânlarla karşılanması amacıyla 1975 yılında kurulan ASELSAN, Türk Silahlı Kuvvetlerini Güçlendirme Vakfı'na (TSKGV) bağlı bir anonim şirkettir. ASELSAN hisselerinin %74,20'si TSKGV'ye, %25,80'i ise Borsa İstanbul'da (BİST) işlem gören halka açıktır. Türkiye'nin en büyük savunma elektroniği kuruluşu olan ASELSAN, başta Türk Silahlı Kuvvetleri olmak üzere yurtiçi ve yurtdışındaki ihtiyaç makamlarının; haberleşme ve bilgi teknolojileri, radar ve elektronik harp, elektro-optik, aviyonik, insansız sistemler, kara, deniz ve silah sistemleri, hava savunma ve füze sistemleri, komuta kontrol sistemleri, ulaştırma, güvenlik, trafik, otomasyon ve sağlık teknolojilerine yönelik ihtiyaçlarını karşılayabilecek geniş bir ürün yelpazesine sahiptir. ASELSAN, bugün özgün ürünlerini ihraç eden; dünyanın ilk 100 savunma sanayi şirketi (Defense News Top 100) arasında yer alan, uluslararası pazarlarda ortaklıklar kuran, yerel işbirlikleri yapan ve yatırım yapan bir marka haline gelmiştir.
+</string>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="headline_h2_size">32sp</dimen>
+    <dimen name="text_body_big_size">16sp</dimen>
+    <dimen name="button_size">16sp</dimen>
+    <dimen name="text_step_number_size">15sp</dimen>
+    <dimen name="text_links_size">16sp</dimen>
+    <dimen name="text_error_message_size">13sp</dimen>
+    <dimen name="text_timer">15sp</dimen>
+
+</resources>

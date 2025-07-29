@@ -1,0 +1,184 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.UstadLoginMobileApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.UstadLoginMobileApp" parent="Base.Theme.UstadLoginMobileApp" />
+
+
+    <style name="SendCodeButton" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">#FF704D</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:paddingStart">32dp</item>
+        <item name="android:paddingEnd">32dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="cornerRadius">32dp</item>
+        <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="ContinueWithEnglish" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">#F8A78B</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:paddingStart">32dp</item>
+        <item name="android:paddingEnd">32dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <style name="ContinueWithTurkish" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">#7454D5</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:paddingStart">32dp</item>
+        <item name="android:paddingEnd">32dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="TextHeadLine" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="android:textColor">#3A2387</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextWelcomeHeadLine" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="android:textColor">#3A2387</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="TextDescription" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="android:textColor">#3A2387</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="TextPhoneMessage" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:gravity">center</item>
+        <item name="maxLines">1</item>
+    </style>
+
+    <style name="TextResendCode" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:visibility">visible</item>
+        <item name="maxLines">1</item>
+    </style>
+
+    <style name="Widget.DenemeYapalim.TextInputLayout.OutlinedBox" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">#FF6A3D</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+    </style>
+
+    <style name="StepTextStyle" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+    </style>
+
+    <style name="ErrorTextStyle" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:background">@drawable/bg_error_message</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="PhoneInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxCornerRadiusTopStart">24dp</item>
+        <item name="boxCornerRadiusTopEnd">24dp</item>
+        <item name="boxCornerRadiusBottomStart">24dp</item>
+        <item name="boxCornerRadiusBottomEnd">24dp</item>
+        <item name="boxStrokeColor">#FF6A3D</item>
+        <item name="startIconDrawable">@drawable/smartphone</item>
+    </style>
+
+    <style name="PhoneEditTextStyle" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:hint">xxx xxx xx xx</item>
+        <item name="android:inputType">phone</item>
+        <item name="android:maxLength">10</item>
+    </style>
+
+    <style name="CountryCodeInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxStrokeColor">#FF6A3D</item>
+        <item name="boxCornerRadiusTopStart">24dp</item>
+        <item name="boxCornerRadiusTopEnd">24dp</item>
+        <item name="boxCornerRadiusBottomStart">24dp</item>
+        <item name="boxCornerRadiusBottomEnd">24dp</item>
+    </style>
+
+    <style name="CountryCodeEditTextStyle" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:inputType">phone</item>
+        <item name="android:text">+</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="LogOutButton" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">#DDD8EB</item>
+        <item name="android:paddingStart">32dp</item>
+        <item name="android:paddingEnd">32dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="cornerRadius">32dp</item>
+        <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="VerificationButton" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">#FEDBCF</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:paddingStart">32dp</item>
+        <item name="android:paddingEnd">32dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="cornerRadius">32dp</item>
+        <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="CompanyDropdownStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxStrokeColor">#5E48C1</item>
+        <item name="boxStrokeWidth">1.8dp</item>
+        <item name="boxStrokeWidthFocused">2.4dp</item>
+        <item name="boxCornerRadiusTopStart">24dp</item>
+        <item name="boxCornerRadiusTopEnd">24dp</item>
+        <item name="boxCornerRadiusBottomStart">24dp</item>
+        <item name="boxCornerRadiusBottomEnd">24dp</item>
+        <item name="backgroundTint">#F8F7FC</item>
+        <item name="android:textColor">#5E48C1</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <style name="ContinueButtonStyle" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/orange_disabled</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="cornerRadius">32dp</item>
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="android:gravity">center</item>
+        <item name="rippleColor">@android:color/transparent</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="elevation">0dp</item>
+    </style>
+</resources>
