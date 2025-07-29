@@ -14,3 +14,5 @@ Başarılı doğrulama sonrası kullanıcıdan şirket seçmesi istenir ve seçi
 - **Material Components**
 - **View Binding**
 - **Fragment**
+
+![Image](https://github.com/user-attachments/assets/f3e1dc60-f981-4f49-b39c-d28616b8e79a)
